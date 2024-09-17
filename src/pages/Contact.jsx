@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'; // Import social media icons
+import { FaLinkedin, FaGithub, FaDownload } from 'react-icons/fa'; // Import social media icons
 
 const Contact = () => {
   return (
@@ -12,7 +12,7 @@ const Contact = () => {
           <Button
             variant="outline-primary"
             className="d-block mb-3"
-            href="https://www.linkedin.com/in/your-profile" // Replace with your LinkedIn URL
+            href="https://www.linkedin.com/in/nalla-siddhartha-92319521a/" // Replace with your LinkedIn URL
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -21,20 +21,22 @@ const Contact = () => {
           <Button
             variant="outline-dark"
             className="d-block mb-3"
-            href="https://github.com/your-username" // Replace with your GitHub URL
+            href="https://github.com/siddhartha5782" // Replace with your GitHub URL
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub /> GitHub
           </Button>
+
           <Button
-            variant="outline-info"
+            variant="outline-dark"
             className="d-block mb-3"
-            href="https://twitter.com/your-username" // Replace with your Twitter URL
+            href="/resume.pdf" // Replace with your GitHub URL
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaTwitter /> Twitter
+            <FaDownload /> My Resume
+            
           </Button>
         </Col>
       </Row>

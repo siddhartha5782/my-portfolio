@@ -8,9 +8,9 @@ const Home = () => {
         <Col md={8}>
           <h1>Welcome to My Portfolio</h1>
           <p className="lead">
-            I am an AI Engineer passionate about building modern web applications and creative solutions. Explore my projects and get to know more about me.
+          Hi, I’m Siddhartha Nalla, a passionate data enthusiast with a background in Data Science and Engineering. My journey in AI and analytics has allowed me to solve real-world problems, from developing cutting-edge models for fruit quality assessment to creating dynamic dashboards for data visualization. I specialize in leveraging data to uncover insights, optimize processes, and build intelligent solutions. Explore my projects, experiences, and how I’m driven by innovation and technology to make an impact in the ever-evolving world of data.
           </p>
-          <Button variant="primary" href="/projects">View Projects</Button>
+          
         </Col>
       </Row>
     </Container>
