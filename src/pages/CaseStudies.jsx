@@ -1,38 +1,56 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import { motion } from 'framer-motion';
+
+const contactVariants = {
+  initial: { opacity: 0, scale: 0.8 },
+  animate: { opacity: 1, scale: 1 },
+  exit: { opacity: 0, scale: 1.1 },
+};
+
+const contactTransition = {
+  duration: 0.6,
+  ease: 'easeInOut',
+};
 
 const CaseStudies = () => {
+  const [casestudies, setCasestudies] = useState([]);
+      useEffect(() => {
+        fetch('casestudies.json')
+          .then((response) => response.json())
+          .then((data) => setCasestudies(data))
+          .catch((error) => console.error('Error fetching projects:', error));
+      }, []);
   return (
-    <Container className="case-studies-container mt-5">
-      <h2 className="text-center">Case Studies</h2>
-      <p className="lead text-center">In-depth analysis of some of my most impactful projects.</p>
-      
-      <Row className="mt-4">
-        <Col md={6}>
-          <Card className="mb-4">
-            <Card.Body>
-              <Card.Title>Case Study 1: AI-powered Recommendation System</Card.Title>
-              <Card.Text>
-                This case study outlines how I developed an AI-powered recommendation engine for an e-commerce platform, improving customer engagement by 20%.
-              </Card.Text>
-              <Card.Link href="#">Read More</Card.Link>
-            </Card.Body>
-          </Card>
-        </Col>
-        
-        <Col md={6}>
-          <Card className="mb-4">
-            <Card.Body>
-              <Card.Title>Case Study 2: Scalable Web Application</Card.Title>
-              <Card.Text>
-                Detailed documentation on building a scalable, real-time web application for managing logistics across multiple teams.
-              </Card.Text>
-              <Card.Link href="#">Read More</Card.Link>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
+    <motion.div
+              variants={contactVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={contactTransition}
+            >
+              <Container className="projects-container mt-5 text-center">
+                  <h2 className="display-6">Case Studies</h2>
+                  <Row className="mt-4">
+                    {casestudies.map((project, index) => (
+                      <Col md={6} key={index} className="mb-4">
+                        <Card className='lead'>
+                          <Card.Body>
+                            <Card.Title>{project.title}</Card.Title>
+                            <Card.Text>{project.description}</Card.Text>
+                            {project.website && (
+                              <Card.Link href={project.website} target="_blank" rel="noopener noreferrer">
+                                View Project
+                              </Card.Link>
+                            )}
+                          </Card.Body>
+                        </Card>
+                      </Col>
+                    ))}
+                  </Row>
+                </Container>
+            </motion.div>
+    
   );
 };
 

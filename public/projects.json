@@ -1,0 +1,38 @@
+[
+    {
+      "title": "3D Reconstruction using Fringe Projection",
+      "description": "To reconstruct a 3D model of an object by projection of fringe patterns using Deep Learning methods. Fringe Projections are projected onto a 3D object and an image is taken from camera. This image is then used to find the depth map of the 3D object. An extensive testing and constant training of Deep Learning models such as UNet, PSMNet and HRNet were proved useful and calibration is done to get the final 3D Profiling.",
+      "website": "https://www.google.com/"
+
+    },
+    {
+      "title": "Fruit Dimension Estimation",
+      "description": "To estimate and analyze the size and weight estimates of fruits from an image of tree. A project in collaboration with an Agritech company, Vegrow where a camera is used to take images of trees from a farm containing fruits and the sizes of fruits are estimated using Deep Learning techniques and statistics and calibration to get the final result in mm. Numerous field tests were conducted to make the most generic and robust model.",
+      "website": ""
+    },
+    {
+      "title": "Fruit Quality Estimation",
+      "description": "To estimate and classify the defects of fruits from an image of an array of fruits lying on the ground. This is a project I took up as an AI Engineer Intern. We use a different version of Transfiner model to detect the fruits lying on the ground and send the fruit region to another Transfiner model to find defects.",
+      "website": ""
+    },
+    {
+      "title": "Human Pose Estimation and Tracking",
+      "description": "To estimate a human skeleton from an image of a person. A video of people is given as input. The Openpose model estimates Part Affinity Fields and Confidence Maps which are used to estimate the Human Pose / Human skeleton.",
+      "website": ""
+    },
+    {
+      "title": "Missile guidance using proportional navigation law",
+      "description": "The main focus of this project is to implement an algorithm for a missile to follow the trajectory of a flight and adjust its direction.",
+      "website": ""
+    },
+    {
+      "title": "Batch XML to JSON",
+      "description": "A small tool to convert batch XML files to JSON for pre-processing of data.",
+      "website": ""
+    },
+    {
+      "title": "Seismic Signal Analysis using Synchrosqueezing Transform",
+      "description": "Detection of different frequencies in the seismic wave using wavelet transform and using synchrosqueezing re-assignment method to observe the frequencies in time-frequency representation.",
+      "website": ""
+    }
+  ]

@@ -1,22 +1,46 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { motion } from 'framer-motion';
+
+const contactVariants = {
+  initial: { opacity: 0, scale: 0.8 },
+  animate: { opacity: 1, scale: 1 },
+  exit: { opacity: 0, scale: 1.1 },
+};
+
+const contactTransition = {
+  duration: 0.6,
+  ease: 'easeInOut',
+};
 
 const About = () => {
+  const [about, setAbout] = useState([]);
+    useEffect(() => {
+      fetch('about.json')
+        .then((response) => response.json())
+        .then((data) => setAbout(data.about))
+        .catch((error) => console.error('Error fetching projects:', error));
+    }, []);
   return (
-    <Container className="about-container mt-5">
-      <Row className="justify-content-center">
-        <Col md={8}>
-          <h2>About Me</h2>
-          <p>
-          I’m Siddhartha Nalla, a passionate AI Engineer and data enthusiast with a strong foundation in data science, analytics, and engineering. I hold a Master’s degree in Data Science, Analytics, and Engineering from Arizona State University and a Bachelor’s degree in Electrical Engineering from the Indian Institute of Technology, Tirupati.
-
-My professional experience includes working as an AI Engineer at Vegrow, where I developed cutting-edge models for fruit quality assessment and dimension estimation using advanced technologies such as iPhone LiDAR, Intel RealSense, and Transfiner models. I also enhanced the company’s web UI, transforming it into a dynamic, data-driven dashboard to help interpret real-time results more effectively.
-
-Through my education and work experience, I’ve gained a deep understanding of machine learning, AI, and data analytics, which I apply to solve complex challenges and drive innovation. I’m excited to continue exploring new frontiers in the world of data and AI.
-          </p>
-        </Col>
-      </Row>
-    </Container>
+    <motion.div
+              variants={contactVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={contactTransition}
+            >
+              <Container className="about-container text-center mt-5">
+                <Row className="justify-content-center">
+                  <Col md={8}>
+                    <h2 className='display-6'>About Me</h2>
+                    <p className='lead'>
+                    {about}
+                    </p>
+                  </Col>
+                </Row>
+              </Container>
+            </motion.div>
+    
   );
 };
 
