@@ -47,7 +47,10 @@
       ] 
     },
     "name":"Siddhartha Nalla",
-    "linkedin":"https://www.linkedin.com/in/siddhartha-nalla-92319521a/",
-    "github":"https://github.com/siddhartha5782"
+    "contact":{
+      "linkedin":"https://www.linkedin.com/in/siddhartha-nalla-92319521a/",
+      "github":"https://github.com/siddhartha5782"
+    }
+    
 }
   

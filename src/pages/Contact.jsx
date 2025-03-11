@@ -15,15 +15,14 @@ const contactTransition = {
 };
 
 const Contact = () => {
-  const [linkedin, setLinkedin] = useState([]);
-  const [github, setGithub] = useState([]);
+  const [contact, setContact] = useState([]);
       useEffect(() => {
         fetch('details.json')
           .then((response) => response.json())
-          .then((data) => setLinkedin(data.linkedin))
-          .then((data) => setGithub(data.github))
+          .then((data) => setContact(data.contact))
           .catch((error) => console.error('Error fetching details:', error));
       }, []);
+  if (!contact) return <p>Loading</p>;
   return (
     <motion.div
           variants={contactVariants}
@@ -36,11 +35,11 @@ const Contact = () => {
             <h2 className="display-6">Contact Me</h2>
             <p className="lead">Feel free to connect with me on social media.</p>
             <Row className="justify-content-center">
-              <Col md={4}>
+            <Col md={4}>
                 <Button
                   variant="outline-primary"
                   className="d-block mb-3"
-                  href={linkedin}
+                  href={contact.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -49,7 +48,7 @@ const Contact = () => {
                 <Button
                   variant="outline-dark"
                   className="d-block mb-3"
-                  href={github} 
+                  href={contact.github} 
                   target="_blank"
                   rel="noopener noreferrer"
                 >
