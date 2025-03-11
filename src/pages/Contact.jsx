@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaLinkedin, FaGithub } from 'react-icons/fa'; // Import social media icons
 import { motion } from 'framer-motion';
@@ -15,6 +15,15 @@ const contactTransition = {
 };
 
 const Contact = () => {
+  const [linkedin, setLinkedin] = useState([]);
+  const [github, setGithub] = useState([]);
+      useEffect(() => {
+        fetch('details.json')
+          .then((response) => response.json())
+          .then((data) => setLinkedin(data.linkedin))
+          .then((data) => setGithub(data.github))
+          .catch((error) => console.error('Error fetching details:', error));
+      }, []);
   return (
     <motion.div
           variants={contactVariants}
@@ -31,7 +40,7 @@ const Contact = () => {
                 <Button
                   variant="outline-primary"
                   className="d-block mb-3"
-                  href="https://www.linkedin.com/in/siddhartha-nalla-92319521a/" // Replace with your LinkedIn URL
+                  href={linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -40,7 +49,7 @@ const Contact = () => {
                 <Button
                   variant="outline-dark"
                   className="d-block mb-3"
-                  href="https://github.com/siddhartha5782" // Replace with your GitHub URL
+                  href={github} 
                   target="_blank"
                   rel="noopener noreferrer"
                 >

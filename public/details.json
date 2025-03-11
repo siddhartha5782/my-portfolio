@@ -1,0 +1,53 @@
+{
+    "home": {
+      "title": "Welcome to My Portfolio!",
+      "introduction": "Hi, I’m Siddhartha Nalla – a Data Scientist and AI Engineer passionate about building intelligent systems that bridge the gap between data and real-world impact.",
+      "highlights": [
+        "🔹AI & Machine Learning Projects",
+        "🔹Data Science & Analytics",
+        "🔹Software Development & Engineering"
+      ],
+      "cta": "🚀 Let’s connect and create something awesome!"
+    },
+    "about": {
+      "title": "About Me",
+      "introduction": "I’m Siddhartha Nalla, a Data Scientist and AI Engineer with experience in machine learning, deep learning, and big data analytics.",
+      "education": [
+        {
+          "degree": "Master of Science in Data Science, Analytics, and Engineering",
+          "institution": "Arizona State University"
+        },
+        {
+          "degree": "Bachelor of Technology in Electrical Engineering",
+          "institution": "IIT Tirupati"
+        }
+      ],
+      "expertise": [
+        "✅Computer Vision – 3D Reconstruction, Pose Estimation, Image Processing",
+        "✅AI & Machine Learning – Deep Learning Models, Neural Networks, Model Optimization",
+        "✅Big Data & Analytics – Apache Spark, Hadoop, Data Mining, Statistical Analysis",
+        "✅Software Development – Python, R, SQL, Ruby on Rails, JavaScript"
+      ],
+      "experience": [
+        {
+          "role": "💡Research Graduate Assistant",
+          "company": "Arizona State University",
+          "description": "Scraped and analyzed traffic data from Mesa, Arizona to study patterns affecting environmental factors."
+        },
+        {
+          "role": "💡AI Engineer",
+          "company": "Vegrow, India",
+          "description": "Developed a fruit quality assessment model using Transformers, iPhone LiDAR, and Intel RealSense, improving analysis speed by 20%."
+        },
+        {
+          "role": "💡Final Year Project",
+          "company": "IIT Tirupati",
+          "description": "Worked on 3D Reconstruction using Fringe Projection, optimizing deep learning techniques for surface profiling."
+        }
+      ] 
+    },
+    "name":"Siddhartha Nalla",
+    "linkedin":"https://www.linkedin.com/in/siddhartha-nalla-92319521a/",
+    "github":"https://github.com/siddhartha5782"
+}
+  
