@@ -36,4 +36,4 @@ Follow these steps to set up and run the project locally:
    cd my-portfolio
 2. **How To Deploy**:
    ```bash
-   npx gh-pages -d build -f 
+   npm run deploy
