@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -13,25 +13,25 @@ import './App.css';
 function AnimatedRoutes() {
   return (
     <AnimatePresence mode="wait">
-        <div className="App">
-          <Header />
-          <main>
-            <Routes>
-              <Route path="/my-portfolio/home" element={<Home />} />
-              <Route path="/my-portfolio/about" element={<About />} />
-              <Route path="/my-portfolio/projects" element={<Projects />} />
-              <Route path="/my-portfolio/case-studies" element={<CaseStudies />} />
-              <Route path="/my-portfolio/contact" element={<Contact />} />
-              <Route path="*" element={<Navigate to="/my-portfolio/home" />} />
-              <Route path="/my-portfolio" element={<Navigate to="/" />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
+      <div className="App">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Navigate to="/home" />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/case-studies" element={<CaseStudies />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Navigate to="/home" />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </AnimatePresence>
-    
   );
 }
+
 function App() {
   return (
     <Router>
@@ -39,4 +39,5 @@ function App() {
     </Router>
   );
 }
+
 export default App;
