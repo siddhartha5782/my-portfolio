@@ -2,7 +2,7 @@
     {
       "title": "3D Reconstruction using Fringe Projection",
       "description": "To reconstruct a 3D model of an object by projection of fringe patterns using Deep Learning methods. Fringe Projections are projected onto a 3D object and an image is taken from camera. This image is then used to find the depth map of the 3D object. An extensive testing and constant training of Deep Learning models such as UNet, PSMNet and HRNet were proved useful and calibration is done to get the final 3D Profiling.",
-      "website": "https://www.google.com/"
+      "website": "https://github.com/siddhartha5782/3D-Reconstruction-using-Fringe-projections"
 
     },
     {
@@ -23,16 +23,41 @@
     {
       "title": "Missile guidance using proportional navigation law",
       "description": "The main focus of this project is to implement an algorithm for a missile to follow the trajectory of a flight and adjust its direction.",
-      "website": ""
+      "website": "https://github.com/siddhartha5782/Missile-guidance-using-proportional-navigation-law"
     },
     {
       "title": "Batch XML to JSON",
       "description": "A small tool to convert batch XML files to JSON for pre-processing of data.",
-      "website": ""
+      "website": "https://github.com/siddhartha5782/xml_to_json-batch-"
     },
     {
       "title": "Seismic Signal Analysis using Synchrosqueezing Transform",
       "description": "Detection of different frequencies in the seismic wave using wavelet transform and using synchrosqueezing re-assignment method to observe the frequencies in time-frequency representation.",
-      "website": ""
-    }
+      "website": "https://github.com/siddhartha5782/sesemic_waves"
+    },
+    {
+      "title": "Customer Segmentation Using Machine Learning",
+      "description": "Implemented a clustering-based approach for customer segmentation using transaction data. Extracted Recency, Frequency, and Monetary (RFM) features and applied K-Means clustering to identify distinct customer groups.",
+      "website": "https://github.com/siddhartha5782/customer_segmentation"
+    },
+    {
+      "title": "Sentiment Analysis Using Machine Learning",
+      "description": "Built a machine learning pipeline for sentiment analysis using NLP techniques. Preprocessed text data, applied TF-IDF vectorization, and trained models such as Logistic Regression, Naïve Bayes, and SVM to classify sentiments.",
+      "website": "https://github.com/siddhartha5782/sentiment_analysis_using_ml"
+  },
+  {
+      "title": "DeepSeek in Colab",
+      "description": "Demonstrated how to run DeepSeek Coder models in Google Colab for code generation and completion tasks. Implemented transformers-based models for generating and infilling code in multiple programming languages.",
+      "website": "https://github.com/siddhartha5782/deepseek_in_colab"
+  },
+  {
+      "title": "Stock Analysis and Prediction Using LSTM",
+      "description": "Developed a time-series forecasting model using LSTM to predict stock prices based on historical data. Applied data preprocessing, feature scaling, and hyperparameter tuning to improve model accuracy.",
+      "website": "https://github.com/siddhartha5782/stock_analysis_prediction_using_LSTM"
+  },
+  {
+      "title": "Face Mask Detection",
+      "description": "Designed a deep learning-based model for detecting face masks in images. Used OpenCV for image processing and a CNN-based classifier trained on labeled datasets to identify masked and unmasked faces.",
+      "website": "https://github.com/siddhartha5782/face_mask_detection"
+  }
   ]

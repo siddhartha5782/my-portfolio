@@ -45,7 +45,7 @@ const Projects = () => {
                             rel="noopener noreferrer"
                             className="btn btn-primary mt-2"
                             style={{
-                              backgroundColor: "#0D6EFD", 
+                              backgroundColor: "#212529", 
                               borderRadius: "8px",
                               padding: "10px 15px",
                               textDecoration: "none",
@@ -54,8 +54,8 @@ const Projects = () => {
                               fontWeight: "600",
                               transition: "all 0.3s ease-in-out"
                             }}
-                            onMouseEnter={(e) => e.target.style.backgroundColor = "#0B5ED7"}
-                            onMouseLeave={(e) => e.target.style.backgroundColor = "#0D6EFD"}
+                            onMouseEnter={(e) => e.target.style.backgroundColor = "#494949"}
+                            onMouseLeave={(e) => e.target.style.backgroundColor = "#212529"}
                           >
                             🔗 View Project
                           </a>

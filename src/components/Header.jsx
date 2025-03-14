@@ -13,7 +13,7 @@ const Header = () => {
             <Nav.Link as={Link} to="/my-portfolio/">Home</Nav.Link>
             <Nav.Link as={Link} to="/my-portfolio/about">About</Nav.Link>
             <Nav.Link as={Link} to="/my-portfolio/projects">Projects</Nav.Link>
-            <Nav.Link as={Link} to="/my-portfolio/case-studies">Case Studies</Nav.Link>  {/* New Case Studies Tab */}
+            {/* <Nav.Link as={Link} to="/my-portfolio/case-studies">Case Studies</Nav.Link>  New Case Studies Tab */}
             <Nav.Link as={Link} to="/my-portfolio/contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
