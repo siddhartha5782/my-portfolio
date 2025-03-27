@@ -1,9 +1,13 @@
 [
     {
+      "title": "Scalable Face Recognition System Using AWS IaaS",
+      "description": "Built a dynamic, cloud-native facial recognition system using core AWS IaaS services (EC2, S3, SQS) with a focus on infrastructure design. Implemented a custom autoscaler in Python to launch and terminate EC2 instances based on demand, supporting real-time inference with high accuracy and low latency. Avoided managed services to exercise full control over scaling logic and resource management.",
+      "website": "https://github.com/siddhartha5782/Scalable-Face-Recognition-System-Using-AWS-IaaS"
+    },
+    {
       "title": "3D Reconstruction using Fringe Projection",
       "description": "To reconstruct a 3D model of an object by projection of fringe patterns using Deep Learning methods. Fringe Projections are projected onto a 3D object and an image is taken from camera. This image is then used to find the depth map of the 3D object. An extensive testing and constant training of Deep Learning models such as UNet, PSMNet and HRNet were proved useful and calibration is done to get the final 3D Profiling.",
       "website": "https://github.com/siddhartha5782/3D-Reconstruction-using-Fringe-projections"
-
     },
     {
       "title": "Fruit Dimension Estimation",
