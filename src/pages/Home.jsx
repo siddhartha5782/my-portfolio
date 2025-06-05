@@ -18,7 +18,7 @@ const Home = () => {
   const [featured, setFeatured] = useState([]);
 
   useEffect(() => {
-    fetch('/details.json')
+    fetch('details.json')
       .then((response) => response.json())
       .then((data) => {
         setHome(data.home);
