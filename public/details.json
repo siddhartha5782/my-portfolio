@@ -50,7 +50,18 @@
     "contact":{
       "linkedin":"https://www.linkedin.com/in/siddhartha-nalla-92319521a/",
       "github":"https://github.com/siddhartha5782"
+    },
+    "featuredProjects": [
+    {
+      "title": "Scalable Face Recognition System Using AWS IaaS",
+      "description": "Built a dynamic, cloud-native facial recognition system using core AWS IaaS services (EC2, S3, SQS) with a focus on infrastructure design.",
+      "website": "https://github.com/siddhartha5782/Scalable-Face-Recognition-System-Using-AWS-IaaS"
+    },
+    {
+      "title": "Fruit Dimension Estimation",
+      "description": "To estimate and analyze the size and weight estimates of fruits from an image of tree. A project in collaboration with an Agritech company, Vegrow where a camera is used to take images of trees from a farm containing fruits and the sizes of fruits are estimated using Deep Learning techniques and statistics and calibration to get the final result in mm.",
+      "website": ""
     }
-    
+  ]
 }
   

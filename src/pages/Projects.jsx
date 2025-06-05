@@ -34,7 +34,16 @@ const Projects = () => {
                 <Row className="mt-4">
                   {projects.map((project, index) => (
                     <Col md={6} key={index} className="mb-4">
-                      <Card className='lead'>
+                      <Card
+                          className="lead"
+                          style={{
+                            backgroundColor: 'rgba(128,128,128,0.3)',
+                            color: 'white',
+                            border: '1px solid #444',
+                            borderRadius: '12px',
+                            padding: '20px'
+                          }}
+                        >
                         <Card.Body>
                           <Card.Title>{project.title}</Card.Title>
                           <Card.Text>{project.description}</Card.Text>
@@ -45,7 +54,7 @@ const Projects = () => {
                             rel="noopener noreferrer"
                             className="btn btn-primary mt-2"
                             style={{
-                              backgroundColor: "#212529", 
+                              backgroundColor: "#474343", 
                               borderRadius: "8px",
                               padding: "10px 15px",
                               textDecoration: "none",

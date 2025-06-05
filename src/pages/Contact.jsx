@@ -46,7 +46,7 @@ const Contact = () => {
                   <FaLinkedin /> LinkedIn
                 </Button>
                 <Button
-                  variant="outline-dark"
+                  variant="outline-light"
                   className="d-block mb-3"
                   href={contact.github} 
                   target="_blank"

@@ -1,7 +1,6 @@
 /* Global Styles */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f8f9fa;
   margin: 0;
   padding: 0;
 }
@@ -10,6 +9,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: url('../public/bg.jpg');
+  background-size: cover;
+  color: rgb(255, 255, 255);
 }
 
 main {
@@ -27,27 +29,39 @@ header {
 footer {
   background-color: #343a40;
   color: white;
-  padding: 10px;
+  padding-top: 18px;
+  /* padding: 10px; */
   text-align: center;
-  margin-top: auto;
+  /* margin-top: auto; */
+
 }
 
 /* Home Page Styles */
 .home-container {
-  margin-top: 3rem;
+  background: rgba(53, 51, 51, 0.95);
+  border-radius: 20px;
+  padding: 50px;
 }
 
 .home-container h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  padding: 10px;
 }
 
 .home-container p {
   font-size: 1.25rem;
   margin-bottom: 2rem;
+  padding-left: 10px;
 }
 
 /* About Page Styles */
+.about-container{
+  background: rgba(53, 51, 51, 0.95);
+  border-radius: 20px;
+  padding: 50px;
+}
+
 .about-container h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
@@ -58,6 +72,12 @@ footer {
 }
 
 /* Projects Page Styles */
+.projects-container{
+  background: rgba(53, 51, 51, 0.95);
+  border-radius: 20px;
+  padding: 50px;
+}
+
 .projects-container h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
@@ -65,9 +85,16 @@ footer {
 
 .card {
   margin: 20px 0;
+  
 }
 
 /* Contact Page Styles */
+.contact-container{
+  background: rgba(53, 51, 51, 0.95);
+  border-radius: 20px;
+  padding: 50px;
+}
+
 .contact-container h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
