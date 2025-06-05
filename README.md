@@ -37,3 +37,6 @@ Follow these steps to set up and run the project locally:
 2. **How To Deploy**:
    ```bash
    npm run deploy
+
+3. **How to run in local**:
+   change the homepage in packages.json to localhost
