@@ -39,9 +39,9 @@
       ],
       "expertise_img": [
         "../public/compvision.png",
-        "/ai.png",
-        "/dbms.png",
-        "/webdev.png"
+        "../public/ai.png",
+        "../public/dbms.png",
+        "../public/webdev.png"
       ],
       "experience": [
         {
