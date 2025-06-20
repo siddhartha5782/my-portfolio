@@ -38,7 +38,7 @@
         "Python, R, SQL, Ruby on Rails, JavaScript"
       ],
       "expertise_img": [
-        "/compvision.png",
+        "../public/compvision.png",
         "/ai.png",
         "/dbms.png",
         "/webdev.png"
