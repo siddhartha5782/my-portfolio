@@ -61,7 +61,7 @@ const About = () => {
                       whileTap={{ scale: 0.97 }}
                       className="p-4 shadow-sm rounded-4 border h-100"
                     >
-                      <img src={about.expertise_img[index]} alt='' className="mb-3"
+                      <img src={about.expertise_img[index]} alt={about.expertise_title[index]} className="mb-3"
                         style={{ width: '70px', height: '70px', objectFit: 'contain', borderRadius: '50%' }}></img>
                       <h4>{about.expertise_title[index]}</h4>
                       <p>{skill}</p>
