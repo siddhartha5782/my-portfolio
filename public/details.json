@@ -3,9 +3,12 @@
       "title": "Welcome to My Portfolio!",
       "introduction": "Hi, I’m Siddhartha Nalla – a Data Scientist and AI Engineer passionate about building intelligent systems that bridge the gap between data and real-world impact.",
       "highlights": [
-        "🔹AI & Machine Learning Projects",
-        "🔹Data Science & Analytics",
-        "🔹Software Development & Engineering"
+        "AI & Machine Learning Projects",
+        "Data Science & Analytics",
+        "Software Development & Engineering",
+        "Computer Vision & Image Processing",
+        "Research-Driven Prototyping & Experimentation",
+        "Big Data Tools (Spark, Hadoop)"
       ],
       "cta": "🚀 Let’s connect and create something awesome!"
     },
@@ -22,11 +25,23 @@
           "institution": "IIT Tirupati"
         }
       ],
+      "expertise_title": [
+        "Computer Vision",
+        "AI & Machine Learning",
+        "Big Data & Analytics",
+        "Software Development"
+      ],
       "expertise": [
-        "✅Computer Vision – 3D Reconstruction, Pose Estimation, Image Processing",
-        "✅AI & Machine Learning – Deep Learning Models, Neural Networks, Model Optimization",
-        "✅Big Data & Analytics – Apache Spark, Hadoop, Data Mining, Statistical Analysis",
-        "✅Software Development – Python, R, SQL, Ruby on Rails, JavaScript"
+        "3D Reconstruction, Pose Estimation, Image Processing",
+        "Deep Learning Models, Neural Networks, Model Optimization",
+        "Apache Spark, Hadoop, Data Mining, Statistical Analysis",
+        "Python, R, SQL, Ruby on Rails, JavaScript"
+      ],
+      "expertise_img": [
+        "/compvision.png",
+        "/ai.png",
+        "/dbms.png",
+        "/webdev.png"
       ],
       "experience": [
         {

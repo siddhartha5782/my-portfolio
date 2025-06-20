@@ -47,11 +47,29 @@ const About = () => {
                 ))}
               
 
-              <h3 className='display-6'>Expertise</h3>
+              {/* <h3 className='display-6'>Expertise</h3>
               
                 {about.expertise.map((skill, index) => (
                   <p key={index}>{skill}</p>
+                ))} */}
+              <h3 className="display-6 mb-4">Expertise</h3>
+              <Row className="justify-content-center">
+                {about.expertise.map((skill, index) => (
+                  <Col key={index} xs={12} sm={6} md={6} lg={6} xl={6} className="mb-4">
+                    <motion.div
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.97 }}
+                      className="p-4 shadow-sm rounded-4 border h-100"
+                    >
+                      <img src={about.expertise_img[index]} alt='' className="mb-3"
+                        style={{ width: '70px', height: '70px', objectFit: 'contain', borderRadius: '50%' }}></img>
+                      <h4>{about.expertise_title[index]}</h4>
+                      <p>{skill}</p>
+                    </motion.div>
+                  </Col>
                 ))}
+              </Row>
+
               
 
               <h3 className='display-6'>Experience</h3>
