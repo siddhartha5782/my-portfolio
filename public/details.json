@@ -38,10 +38,10 @@
         "Python, R, SQL, Ruby on Rails, JavaScript"
       ],
       "expertise_img": [
-        "../public/compvision.png",
-        "../public/ai.png",
-        "../public/dbms.png",
-        "../public/webdev.png"
+        "compvision.png",
+        "ai.png",
+        "dbms.png",
+        "webdev.png"
       ],
       "experience": [
         {
