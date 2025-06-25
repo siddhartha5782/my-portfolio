@@ -61,9 +61,12 @@ const About = () => {
                       whileTap={{ scale: 0.97 }}
                       className="p-4 shadow-sm rounded-4 border h-100"
                     >
-                      <img src={about.expertise_img[index]} alt={about.expertise_title[index]} className="mb-3"
-                        style={{ width: '70px', height: '70px', objectFit: 'contain', borderRadius: '50%' }}></img>
-                      <h4>{about.expertise_title[index]}</h4>
+                      <div class="flex-container" style={{ display: 'flex', alignItems: 'center' }}>
+                        <div style={{ marginRight: '15px' }}><img src={about.expertise_img[index]} alt={about.expertise_title[index]} className="mb-3"
+                        style={{ width: '50px', height: '50px', objectFit: 'contain', borderRadius: '50%' }}></img></div>
+                        <div><h4 style={{ marginBottom: '15px' }}>{about.expertise_title[index]}</h4></div>
+                        </div>
+                      
                       <p>{skill}</p>
                     </motion.div>
                   </Col>
@@ -72,11 +75,12 @@ const About = () => {
 
               
 
-              <h3 className='display-6'>Experience</h3>
+              <h3 className='display-6' style={{marginBottom: '1rem' }}>Experience</h3>
               
                 {about.experience.map((exp, index) => (
-                  <p key={index}>
-                    <strong>{exp.role}</strong> at {exp.company} - {exp.description}
+                  <p key={index} style={{ lineHeight: '1.6', marginBottom: '1rem' }}>
+                    
+                    <strong>{exp.role}</strong> at <span style={{ fontWeight: 500 }}>{exp.company}</span> – {exp.description}
                   </p>
                 ))}
               

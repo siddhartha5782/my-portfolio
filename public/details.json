@@ -45,17 +45,17 @@
       ],
       "experience": [
         {
-          "role": "💡Research Graduate Assistant",
+          "role": "Research Graduate Assistant",
           "company": "Arizona State University",
           "description": "Scraped and analyzed traffic data from Mesa, Arizona to study patterns affecting environmental factors."
         },
         {
-          "role": "💡AI Engineer",
+          "role": "AI Engineer",
           "company": "Vegrow, India",
           "description": "Developed a fruit quality assessment model using Transformers, iPhone LiDAR, and Intel RealSense, improving analysis speed by 20%."
         },
         {
-          "role": "💡Final Year Project",
+          "role": "Final Year Project",
           "company": "IIT Tirupati",
           "description": "Worked on 3D Reconstruction using Fringe Projection, optimizing deep learning techniques for surface profiling."
         }
