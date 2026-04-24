@@ -79,7 +79,7 @@ const Contact = () => {
               </a>
 
               <a 
-                href="mailto:contact@example.com" 
+                href={`mailto:${contact.email}`} 
                 className="contact-method"
               >
                 <div className="method-icon email"><FaEnvelope /></div>
@@ -92,7 +92,7 @@ const Contact = () => {
 
             <div className="contact-cta">
               <p>Looking for a collaboration?</p>
-              <a href="mailto:contact@example.com" className="btn-premium">
+              <a href={`mailto:${contact.email}`} className="btn-premium">
                 Let's Talk <FaPaperPlane className="btn-icon" />
               </a>
             </div>
