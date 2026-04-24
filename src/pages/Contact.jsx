@@ -78,23 +78,6 @@ const Contact = () => {
                 </div>
               </a>
 
-              <a 
-                href={`mailto:${contact.email}`} 
-                className="contact-method"
-              >
-                <div className="method-icon email"><FaEnvelope /></div>
-                <div className="method-info">
-                  <h3>Email</h3>
-                  <p>Send me a direct message</p>
-                </div>
-              </a>
-            </div>
-
-            <div className="contact-cta">
-              <p>Looking for a collaboration?</p>
-              <a href={`mailto:${contact.email}`} className="btn-premium">
-                Let's Talk <FaPaperPlane className="btn-icon" />
-              </a>
             </div>
           </motion.div>
         </div>
