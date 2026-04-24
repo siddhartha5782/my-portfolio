@@ -42,24 +42,31 @@
   gap: 32px;
 }
 
-.nav-link {
-  color: var(--text-secondary);
+.navbar-container .nav-link {
+  color: #ffffff !important;
+  opacity: 0.8;
   text-decoration: none;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.05rem;
   transition: var(--transition);
   position: relative;
+  outline: none;
 }
 
-.nav-link:hover {
-  color: var(--text-primary);
+.navbar-container .nav-link:hover,
+.navbar-container .nav-link:focus {
+  color: #ffffff !important;
+  opacity: 1;
+  outline: none;
 }
 
-.nav-link.active {
-  color: var(--accent-primary);
+.navbar-container .nav-link.active {
+  color: var(--accent-primary) !important;
+  opacity: 1;
+  transition: none;
 }
 
-.nav-link.active::after {
+.navbar-container .nav-link.active::after {
   content: "";
   position: absolute;
   bottom: -4px;
