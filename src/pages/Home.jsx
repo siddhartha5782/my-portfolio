@@ -1,17 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { FaArrowRight, FaCode, FaBrain, FaDatabase } from 'react-icons/fa';
+import './Home.css';
 
-const contactVariants = {
-  initial: { opacity: 0, scale: 0.8 },
-  animate: { opacity: 1, scale: 1 },
-  exit: { opacity: 0, scale: 1.1 },
-};
-
-const contactTransition = {
-  duration: 0.6,
-  ease: 'easeInOut',
-};
 
 const Home = () => {
   const [home, setHome] = useState(null);
@@ -27,75 +19,107 @@ const Home = () => {
       .catch((error) => console.error('Error fetching about:', error));
   }, []);
 
-  if (!home) return <p>Loading...</p>;
+  if (!home) return (
+    <div className="loader-container">
+      <div className="loader"></div>
+    </div>
+  );
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: { y: 0, opacity: 1 }
+  };
 
   return (
-    <motion.div
-      variants={contactVariants}
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      transition={contactTransition}
+    <motion.div 
+      className="home-page"
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
     >
-      <Container className="home-container mt-5">
-        <Row className="align-items-start">
-          {/* Left: Intro */}
-          <Col md={6} className="text-light text-center mb-4">
-            <h1 className="display-6">{home.title}</h1>
-            <p className="lead">{home.introduction}</p>
-            {home.highlights.map((item, index) => (
-              <p key={index} className="lead">{item}</p>
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="container">
+          <motion.h1 className="hero-title" variants={itemVariants}>
+            {home.title.split(' ').map((word, i) => (
+              <span key={i} className={i === 2 || i === 3 ? 'text-gradient' : ''}>
+                {word}{' '}
+              </span>
             ))}
-            <p className="lead">{home.cta}</p>
-          </Col>
+          </motion.h1>
+          <motion.p className="hero-intro" variants={itemVariants}>
+            {home.introduction}
+          </motion.p>
+          <motion.div className="hero-cta" variants={itemVariants}>
+            <Link to="/projects" className="btn-premium">
+              View Work <FaArrowRight className="btn-icon" />
+            </Link>
+          </motion.div>
+        </div>
+      </section>
 
-          {/* Right: Featured Projects */}
-          <Col md={6}>
-            <h4 className="text-light mb-4">✨ Featured Projects</h4>
+      {/* Highlights / Skills Bar */}
+      <section className="highlights-bar">
+        <div className="container">
+          <div className="highlights-grid">
+            {home.highlights.slice(0, 3).map((item, index) => (
+              <motion.div key={index} className="highlight-item" variants={itemVariants}>
+                {index === 0 && <FaBrain className="highlight-icon" />}
+                {index === 1 && <FaDatabase className="highlight-icon" />}
+                {index === 2 && <FaCode className="highlight-icon" />}
+                <span>{item}</span>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Projects */}
+      <section id="featured" className="featured-section">
+        <div className="container">
+          <motion.h2 className="section-title" variants={itemVariants}>
+            Featured <span className="text-gradient">Projects</span>
+          </motion.h2>
+          <div className="featured-grid">
             {featured.map((project, index) => (
-              <Card
-                key={index}
-                className="lead"
-                style={{
-                        backgroundColor: 'rgba(128,128,128,0.3)',
-                        color: 'white',
-                        border: '1px solid #444',
-                        borderRadius: '12px',
-                        padding: '20px'
-                      }}
+              <motion.div 
+                key={index} 
+                className="glass-card project-card"
+                variants={itemVariants}
+                whileHover={{ scale: 1.02 }}
               >
-                <Card.Body>
-                  <Card.Title>{project.title}</Card.Title>
-                  <Card.Text>{project.description}</Card.Text>
+                <div className="project-content">
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
                   {project.website && (
                     <a
                       href={project.website} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="btn btn-primary mt-2"
-                      style={{
-                            backgroundColor: "#474343", 
-                            borderRadius: "8px",
-                            padding: "10px 15px",
-                            textDecoration: "none",
-                            color: "white",
-                            display: "inline-block",
-                            fontWeight: "600",
-                            transition: "all 0.3s ease-in-out"
-                          }}
-                      
+                      className="project-link"
                     >
-                      🔗 View Project
+                      Explore Project <FaArrowRight />
                     </a>
                   )}
-                </Card.Body>
-              </Card>
+                </div>
+              </motion.div>
             ))}
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </section>
     </motion.div>
   );
 };
 
 export default Home;
+

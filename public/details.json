@@ -59,6 +59,13 @@
           "company": "IIT Tirupati",
           "description": "Worked on 3D Reconstruction using Fringe Projection, optimizing deep learning techniques for surface profiling."
         }
+      ],
+      "publications": [
+        {
+          "title": "A Smart Transformer-Based Approach to Detect Fruit Defects in Supply Chains",
+          "journal": "Proceedings of the International Conference on Intelligent Vision and Computing (ICIVC 2024). Lecture Notes in Networks and Systems, vol 904. Springer, 2024",
+          "doi": "10.1007/978-981-99-9704-6_26"
+        }
       ] 
     },
     "name":"Siddhartha Nalla",

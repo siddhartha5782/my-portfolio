@@ -1,0 +1,88 @@
+.contact-hero {
+  padding: 80px 0 40px;
+  text-align: center;
+}
+
+.contact-intro {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto 100px;
+}
+
+.contact-card {
+  padding: 40px;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  text-decoration: none;
+  transition: var(--transition);
+  border: 1px solid transparent;
+}
+
+.contact-method:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--glass-border);
+  transform: translateX(10px);
+}
+
+.method-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.method-icon.linkedin { background: rgba(0, 119, 181, 0.1); color: #0077b5; }
+.method-icon.github { background: rgba(255, 255, 255, 0.1); color: #fff; }
+.method-icon.email { background: rgba(0, 242, 255, 0.1); color: var(--accent-primary); }
+
+.method-info h3 {
+  font-size: 1.1rem;
+  margin: 0 0 4px;
+  color: var(--text-primary);
+}
+
+.method-info p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.contact-cta {
+  text-align: center;
+  border-top: 1px solid var(--glass-border);
+  padding-top: 40px;
+}
+
+.contact-cta p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 20px;
+  }
+}

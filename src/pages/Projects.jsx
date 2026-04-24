@@ -1,83 +1,88 @@
-import React,{useEffect, useState} from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-
-const contactVariants = {
-  initial: { opacity: 0, scale: 0.8 },
-  animate: { opacity: 1, scale: 1 },
-  exit: { opacity: 0, scale: 1.1 },
-};
-
-const contactTransition = {
-  duration: 0.6,
-  ease: 'easeInOut',
-};
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import './Projects.css';
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
+
   useEffect(() => {
     fetch('projects.json')
       .then((response) => response.json())
       .then((data) => setProjects(data))
       .catch((error) => console.error('Error fetching projects:', error));
   }, []);
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.1 }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: { y: 0, opacity: 1 }
+  };
+
   return (
-    <motion.div
-              variants={contactVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-              transition={contactTransition}
+    <motion.div 
+      className="projects-page"
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
+      <div className="container">
+        <section className="projects-hero">
+          <motion.h1 className="section-title" variants={itemVariants}>
+            My <span className="text-gradient">Projects</span>
+          </motion.h1>
+          <motion.p className="projects-intro" variants={itemVariants}>
+            A showcase of my work in AI, Data Science, and Software Engineering.
+          </motion.p>
+        </section>
+
+        <div className="projects-grid">
+          {projects.map((project, index) => (
+            <motion.div 
+              key={index} 
+              className="glass-card project-card"
+              variants={itemVariants}
+              whileHover={{ scale: 1.02 }}
             >
-              <Container className="projects-container mt-5 text-center" style={{ minHeight: "100vh" }}>
-                <h2 className="display-6">My Projects</h2>
-                <Row className="mt-4">
-                  {projects.map((project, index) => (
-                    <Col md={6} key={index} className="mb-4">
-                      <Card
-                          className="lead"
-                          style={{
-                            backgroundColor: 'rgba(128,128,128,0.3)',
-                            color: 'white',
-                            border: '1px solid #444',
-                            borderRadius: '12px',
-                            padding: '20px'
-                          }}
-                        >
-                        <Card.Body>
-                          <Card.Title>{project.title}</Card.Title>
-                          <Card.Text>{project.description}</Card.Text>
-                          {project.website && (
-                            <a 
-                            href={project.website} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="btn btn-primary mt-2"
-                            style={{
-                              backgroundColor: "#474343", 
-                              borderRadius: "8px",
-                              padding: "10px 15px",
-                              textDecoration: "none",
-                              color: "white",
-                              display: "inline-block",
-                              fontWeight: "600",
-                              transition: "all 0.3s ease-in-out"
-                            }}
-                            onMouseEnter={(e) => e.target.style.backgroundColor = "#494949"}
-                            onMouseLeave={(e) => e.target.style.backgroundColor = "#212529"}
-                          >
-                            🔗 View Project
-                          </a>
-                          )}
-                        </Card.Body>
-                      </Card>
-                    </Col>
-                  ))}
-                </Row>
-              </Container>
+              <div className="project-content">
+                <div className="project-header">
+                  <h3>{project.title}</h3>
+                  <div className="project-icons">
+                    {project.website && (
+                      <a href={project.website} target="_blank" rel="noopener noreferrer">
+                        <FaGithub />
+                      </a>
+                    )}
+                  </div>
+                </div>
+                <p>{project.description}</p>
+                <div className="project-footer">
+                  {project.website && (
+                    <a 
+                      href={project.website} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="btn-premium project-btn"
+                    >
+                      View Details <FaExternalLinkAlt className="btn-icon" />
+                    </a>
+                  )}
+                </div>
+              </div>
             </motion.div>
-    
+          ))}
+        </div>
+      </div>
+    </motion.div>
   );
 };
 
 export default Projects;
+
