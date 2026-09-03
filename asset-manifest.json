@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.a97f5d1f.css",
+    "main.js": "/my-portfolio/static/js/main.892e8867.js",
+    "static/css/762.47df112e.chunk.css": "/my-portfolio/static/css/762.47df112e.chunk.css",
+    "static/js/762.a5ec919a.chunk.js": "/my-portfolio/static/js/762.a5ec919a.chunk.js",
+    "static/css/453.f76c63c7.chunk.css": "/my-portfolio/static/css/453.f76c63c7.chunk.css",
+    "static/js/453.bf1059a5.chunk.js": "/my-portfolio/static/js/453.bf1059a5.chunk.js",
+    "static/css/978.9906397d.chunk.css": "/my-portfolio/static/css/978.9906397d.chunk.css",
+    "static/js/978.cb0a298f.chunk.js": "/my-portfolio/static/js/978.cb0a298f.chunk.js",
+    "static/css/206.0ba22091.chunk.css": "/my-portfolio/static/css/206.0ba22091.chunk.css",
+    "static/js/206.f1787106.chunk.js": "/my-portfolio/static/js/206.f1787106.chunk.js",
+    "static/js/834.9005eb66.chunk.js": "/my-portfolio/static/js/834.9005eb66.chunk.js",
+    "index.html": "/my-portfolio/index.html",
+    "main.a97f5d1f.css.map": "/my-portfolio/static/css/main.a97f5d1f.css.map",
+    "main.892e8867.js.map": "/my-portfolio/static/js/main.892e8867.js.map",
+    "762.47df112e.chunk.css.map": "/my-portfolio/static/css/762.47df112e.chunk.css.map",
+    "762.a5ec919a.chunk.js.map": "/my-portfolio/static/js/762.a5ec919a.chunk.js.map",
+    "453.f76c63c7.chunk.css.map": "/my-portfolio/static/css/453.f76c63c7.chunk.css.map",
+    "453.bf1059a5.chunk.js.map": "/my-portfolio/static/js/453.bf1059a5.chunk.js.map",
+    "978.9906397d.chunk.css.map": "/my-portfolio/static/css/978.9906397d.chunk.css.map",
+    "978.cb0a298f.chunk.js.map": "/my-portfolio/static/js/978.cb0a298f.chunk.js.map",
+    "206.0ba22091.chunk.css.map": "/my-portfolio/static/css/206.0ba22091.chunk.css.map",
+    "206.f1787106.chunk.js.map": "/my-portfolio/static/js/206.f1787106.chunk.js.map",
+    "834.9005eb66.chunk.js.map": "/my-portfolio/static/js/834.9005eb66.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a97f5d1f.css",
+    "static/js/main.892e8867.js"
+  ]
+}

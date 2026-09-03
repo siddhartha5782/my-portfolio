@@ -1,0 +1,132 @@
+{
+  "home": {
+    "title": "Building intelligent systems",
+    "titleAccent": "that reach production",
+    "introduction": "I'm Siddhartha Nalla — a Software Engineer focused on AI/ML, backend, and distributed systems. I design and deploy production-grade LLM, RAG, and cloud-native platforms on AWS.",
+    "highlights": [
+      "Generative AI, LLMs & RAG",
+      "Backend, APIs & Distributed Systems",
+      "MLOps on AWS, Docker & Kubernetes",
+      "Computer Vision & Deep Learning",
+      "Data Engineering with Spark & Snowflake",
+      "Model Optimization & Evaluation"
+    ],
+    "cta": "Let's build something worth deploying."
+  },
+  "about": {
+    "title": "About Me",
+    "introduction": "I'm a Software Engineer with 3+ years of experience designing and deploying production-grade AI/ML, backend, and cloud-native systems. I work in Python, FastAPI, AWS, Docker and Kubernetes, building scalable microservices, RAG platforms, AI agents and ML pipelines — with a focus on latency, model performance and production reliability.",
+    "education": [
+      {
+        "degree": "M.S. in Data Science, Analytics and Engineering",
+        "institution": "Arizona State University, Tempe, AZ",
+        "period": "Expected May 2026",
+        "detail": "GPA 4.0"
+      },
+      {
+        "degree": "B.Tech in Electrical Engineering",
+        "institution": "Indian Institute of Technology, Tirupati",
+        "period": "May 2023",
+        "detail": "GPA 7.68"
+      }
+    ],
+    "expertise_title": [
+      "LLMs & Generative AI",
+      "Backend & Distributed Systems",
+      "Cloud, MLOps & Data",
+      "Computer Vision & Deep Learning"
+    ],
+    "expertise": [
+      "RAG pipelines, AI agents, LangChain, prompt engineering, embeddings, vector search (FAISS), fine-tuning and LLM evaluation.",
+      "FastAPI and Flask microservices, REST API design, system design, PostgreSQL and MongoDB at production scale.",
+      "AWS (Bedrock, SageMaker, Lambda, S3), Docker, Kubernetes, CI/CD, plus PySpark, Snowflake and ETL pipelines.",
+      "PyTorch, TensorFlow, Hugging Face Transformers, model optimization, quantization and feature engineering."
+    ],
+    "expertise_img": [
+      "ai.png",
+      "webdev.png",
+      "dbms.png",
+      "compvision.png"
+    ],
+    "experience": [
+      {
+        "role": "AI Software Engineer",
+        "company": "DXC Technology",
+        "location": "Arizona, USA",
+        "period": "Nov 2025 – Present",
+        "description": "Architecting enterprise RAG and agentic AI systems on AWS.",
+        "highlights": [
+          "Architected a Python, AWS Bedrock and LangChain RAG platform, cutting AI response latency 47% and improving answer accuracy 35% across enterprise knowledge systems.",
+          "Engineered FastAPI microservices with Hugging Face Transformers and FAISS to process 8M+ documents, raising semantic-search precision 40% at sub-second retrieval.",
+          "Optimized PyTorch and TensorFlow LLM inference via quantization and batching — 32% lower infra cost, 2.6x higher throughput.",
+          "Automated AWS SageMaker MLOps with Docker, Kubernetes and CI/CD, reducing deployment time 70% with zero-downtime releases.",
+          "Built AI-agent orchestration with LangChain, REST APIs and PostgreSQL, cutting manual processing effort 58%."
+        ]
+      },
+      {
+        "role": "AI Software Developer",
+        "company": "Vegrow",
+        "location": "India",
+        "period": "Jun 2022 – Jul 2024",
+        "description": "Built computer vision, NLP and data platforms for agricultural supply chains.",
+        "highlights": [
+          "Developed CV and deep learning models in TensorFlow and PyTorch for crop quality assessment — 94% classification accuracy across 2M+ images.",
+          "Designed NLP pipelines with Hugging Face Transformers and Scikit-learn for multilingual classification and entity extraction, improving accuracy 29%.",
+          "Built ML data pipelines in PySpark, Pandas, SQL and Snowflake over 15TB+ of data, cutting ETL runtime 45%.",
+          "Shipped FastAPI services with Docker-based inference handling 500K+ monthly predictions at 99.9% availability.",
+          "Deployed SageMaker models with S3-backed pipelines and GitHub CI/CD, shortening release cycles 60%."
+        ]
+      }
+    ],
+    "publications": [
+      {
+        "title": "A Smart Transformer-Based Approach to Detect Fruit Defects in Supply Chains",
+        "journal": "Proceedings of the International Conference on Intelligent Vision and Computing (ICIVC 2024). Lecture Notes in Networks and Systems, vol 904. Springer, 2024",
+        "doi": "10.1007/978-981-99-9704-6_26"
+      }
+    ]
+  },
+  "name": "Siddhartha Nalla",
+  "contact": {
+    "linkedin": "https://www.linkedin.com/in/siddhartha-nalla-92319521a/",
+    "github": "https://github.com/siddhartha5782"
+  },
+  "featuredProjects": [
+    {
+      "title": "PolySage AI — Production RAG & Agentic AI Platform",
+      "description": "Built at the Claude Builder Club Hackathon. End-to-end RAG platform built with LangChain, Claude and FAISS, with agentic workflows, prompt engineering, vector search and intelligent caching — 98.5% reliability and a 40% cache-hit rate. Deployed via FastAPI on AWS with Docker, Kubernetes, evaluation harnesses and CI/CD.",
+      "tags": [
+        "Claude",
+        "LangChain",
+        "FAISS",
+        "FastAPI",
+        "AWS",
+        "Hackathon"
+      ],
+      "website": "https://github.com/siddhartha5782/PolySage_AI"
+    },
+    {
+      "title": "Adversarially Robust AI Assistant",
+      "description": "Fine-tuned DistilGPT2 with FreeLB adversarial training on 10K curated pairs and built an LLM evaluation harness, achieving a 0% prompt-injection rate and 18% fewer hallucinations. Deployed on Azure with Flask, Docker and RLHF-inspired feedback loops.",
+      "tags": [
+        "PyTorch",
+        "DistilGPT2",
+        "FreeLB",
+        "Flask",
+        "Azure"
+      ],
+      "website": "https://github.com/siddhartha5782/Adversarial-ChatBot"
+    },
+    {
+      "title": "Scalable Face Recognition System Using AWS IaaS",
+      "description": "Cloud-native facial recognition pipeline built on core AWS IaaS primitives (EC2, S3, SQS) with autoscaling and an infrastructure-first design.",
+      "tags": [
+        "AWS",
+        "EC2",
+        "S3",
+        "SQS"
+      ],
+      "website": "https://github.com/siddhartha5782/Scalable-Face-Recognition-System-Using-AWS-IaaS"
+    }
+  ]
+}

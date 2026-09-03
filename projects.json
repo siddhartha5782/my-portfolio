@@ -1,0 +1,342 @@
+[
+  {
+    "title": "PolySage AI — Production RAG & Agentic AI Platform",
+    "category": "AI & LLM Systems",
+    "description": "Built at the Claude Builder Club Hackathon. An end-to-end RAG platform using LangChain, Claude and FAISS, combining agentic workflows, prompt engineering, vector search and intelligent caching. Achieved 98.5% reliability and a 40% cache-hit rate, deployed via FastAPI on AWS with Docker, Kubernetes, evaluation harnesses and CI/CD.",
+    "tags": [
+      "Claude",
+      "LangChain",
+      "FAISS",
+      "FastAPI",
+      "AWS",
+      "Hackathon"
+    ],
+    "website": "https://github.com/siddhartha5782/PolySage_AI"
+  },
+  {
+    "title": "MLOps Lifecycle Template",
+    "category": "AI & LLM Systems",
+    "description": "End-to-end MLOps lifecycle in one repo: training, an MLflow registry with gated promotion, hot-reload FastAPI serving, Evidently drift monitoring with alerting, and GitHub Actions CI/CD with automatic rollback.",
+    "tags": [
+      "MLOps",
+      "MLflow",
+      "FastAPI",
+      "Evidently",
+      "GitHub Actions"
+    ],
+    "website": "https://github.com/siddhartha5782/mlops-lifecycle-template"
+  },
+  {
+    "title": "Real-Time Recommendation System",
+    "category": "AI & LLM Systems",
+    "description": "Real-time recommender on MovieLens-25M: two-tower retrieval with logQ-corrected in-batch softmax, LightGBM LambdaRank reranking, and FastAPI serving with Redis feature caching and cold-start fallbacks. 2.1x recall@10 over a popularity baseline at a p99 of 5.6ms.",
+    "tags": [
+      "PyTorch",
+      "LightGBM",
+      "FastAPI",
+      "Redis",
+      "RecSys"
+    ],
+    "website": "https://github.com/siddhartha5782/realtime-recsys"
+  },
+  {
+    "title": "DocProof — Evaluation-Driven Document Extraction",
+    "category": "AI & LLM Systems",
+    "description": "Document extraction built around evaluation: Claude structured outputs, per-field confidence from deterministic validators, review-queue routing, a LangGraph retry loop, and a golden test set with LLM-as-judge graders gating regressions in CI.",
+    "tags": [
+      "Claude",
+      "LangGraph",
+      "LLM-as-judge",
+      "Python",
+      "CI"
+    ],
+    "website": "https://github.com/siddhartha5782/docproof"
+  },
+  {
+    "title": "Multi-Agent Data Analyst",
+    "category": "AI & LLM Systems",
+    "description": "Multi-agent data analyst on LangGraph and Claude: parallel analyst fan-out, sandboxed pandas execution, a critic revision loop, and per-agent token accounting — with orchestration testable without an API key.",
+    "tags": [
+      "LangGraph",
+      "Claude",
+      "AI Agents",
+      "pandas",
+      "Python"
+    ],
+    "website": "https://github.com/siddhartha5782/multi-agent-analyst"
+  },
+  {
+    "title": "LLM Fine-Tune & Quantization Benchmark",
+    "category": "AI & LLM Systems",
+    "description": "QLoRA fine-tune of Qwen2.5-1.5B on GSM8K running on a 4GB laptop GPU, paired with a quantized inference benchmark across fp16, int8 and nf4. Exact-match moved from 1.5–5.5% at base to 54–60% tuned, with measured accuracy, throughput and VRAM trade-offs.",
+    "tags": [
+      "QLoRA",
+      "Qwen2.5",
+      "Quantization",
+      "PyTorch",
+      "Benchmarking"
+    ],
+    "website": "https://github.com/siddhartha5782/llm-finetune-quant-bench"
+  },
+  {
+    "title": "Adversarially Robust AI Assistant",
+    "category": "AI & LLM Systems",
+    "description": "Fine-tuned DistilGPT2 with FreeLB adversarial training on 10K curated pairs and built an LLM evaluation harness, reaching a 0% prompt-injection rate and 18% fewer hallucinations. Deployed on Azure with Flask, Docker and RLHF-inspired feedback loops.",
+    "tags": [
+      "DistilGPT2",
+      "FreeLB",
+      "PyTorch",
+      "Flask",
+      "Azure"
+    ],
+    "website": "https://github.com/siddhartha5782/Adversarial-ChatBot"
+  },
+  {
+    "title": "Scalable Face Recognition System Using AWS IaaS",
+    "category": "AI & LLM Systems",
+    "description": "Cloud-native facial recognition system built on core AWS IaaS primitives (EC2, S3, SQS). A custom Python autoscaler launches and terminates EC2 instances on demand for real-time inference — managed services were deliberately avoided to keep full control over scaling logic and resource management.",
+    "tags": [
+      "AWS",
+      "EC2",
+      "S3",
+      "SQS",
+      "Python",
+      "Autoscaling"
+    ],
+    "website": "https://github.com/siddhartha5782/Scalable-Face-Recognition-System-Using-AWS-IaaS"
+  },
+  {
+    "title": "3D Reconstruction using Fringe Projection",
+    "category": "Computer Vision",
+    "description": "Reconstructs a 3D model of an object from projected fringe patterns using deep learning. Patterns are projected onto the object and captured by camera, then used to recover a depth map — with UNet, PSMNet and HRNet evaluated and calibration applied for final 3D surface profiling.",
+    "tags": [
+      "UNet",
+      "PSMNet",
+      "HRNet",
+      "Deep Learning",
+      "3D Vision"
+    ],
+    "website": "https://github.com/siddhartha5782/3D-Reconstruction-using-Fringe-projections"
+  },
+  {
+    "title": "Fruit Quality Estimation",
+    "category": "Computer Vision",
+    "description": "Detects and classifies defects on fruit from images of fruit laid out on the ground. A modified Transfiner model localises individual fruit, and each fruit region is passed to a second Transfiner model for defect detection. Published at ICIVC 2024 (Springer LNNS vol. 904).",
+    "tags": [
+      "Transfiner",
+      "Instance Segmentation",
+      "PyTorch",
+      "Published"
+    ],
+    "website": ""
+  },
+  {
+    "title": "Fruit Dimension Estimation",
+    "category": "Computer Vision",
+    "description": "Estimates the size and weight of fruit directly from tree images, built in collaboration with agritech company Vegrow. Deep learning, statistics and camera calibration combine to produce final measurements in millimetres, validated across extensive field tests for robustness.",
+    "tags": [
+      "Deep Learning",
+      "Calibration",
+      "Agritech",
+      "Python"
+    ],
+    "website": ""
+  },
+  {
+    "title": "Human Pose Estimation and Tracking",
+    "category": "Computer Vision",
+    "description": "Estimates human skeletons from video input. An OpenPose model predicts Part Affinity Fields and Confidence Maps, which are combined to recover and track full human poses across frames.",
+    "tags": [
+      "OpenPose",
+      "Pose Estimation",
+      "Computer Vision",
+      "Python"
+    ],
+    "website": ""
+  },
+  {
+    "title": "Face Mask Detection",
+    "category": "Computer Vision",
+    "description": "Deep learning classifier that detects whether a face in an image or video frame is wearing a mask, built as an end-to-end notebook covering data preparation, training and evaluation.",
+    "tags": [
+      "CNN",
+      "OpenCV",
+      "Jupyter",
+      "Classification"
+    ],
+    "website": "https://github.com/siddhartha5782/face_mask_detection"
+  },
+  {
+    "title": "Stock Analysis and Prediction Using LSTM",
+    "category": "Machine Learning & Data Science",
+    "description": "Time-series analysis and price forecasting on historical stock data using LSTM networks, covering feature preparation, sequence modelling and evaluation against simpler baselines.",
+    "tags": [
+      "LSTM",
+      "Time Series",
+      "TensorFlow",
+      "Jupyter"
+    ],
+    "website": "https://github.com/siddhartha5782/stock_analysis_prediction_using_LSTM"
+  },
+  {
+    "title": "Sentiment Analysis Using Machine Learning",
+    "category": "Machine Learning & Data Science",
+    "description": "Text sentiment classification pipeline covering preprocessing, vectorisation and model comparison across classical ML classifiers, evaluated on held-out review data.",
+    "tags": [
+      "NLP",
+      "Scikit-learn",
+      "Text Classification",
+      "Jupyter"
+    ],
+    "website": "https://github.com/siddhartha5782/sentiment_analysis_using_ml"
+  },
+  {
+    "title": "Customer Segmentation",
+    "category": "Machine Learning & Data Science",
+    "description": "Unsupervised segmentation of customers into actionable groups using clustering on behavioural and demographic features, with exploratory analysis and cluster interpretation.",
+    "tags": [
+      "Clustering",
+      "K-Means",
+      "Scikit-learn",
+      "Analytics"
+    ],
+    "website": "https://github.com/siddhartha5782/customer_segmentation"
+  },
+  {
+    "title": "Virtual Healthcare Assistant",
+    "category": "Machine Learning & Data Science",
+    "description": "Final-project virtual healthcare assistant that interprets user-described symptoms and returns guidance, built as a notebook-driven NLP and modelling pipeline.",
+    "tags": [
+      "NLP",
+      "Healthcare",
+      "Jupyter",
+      "Python"
+    ],
+    "website": "https://github.com/siddhartha5782/FP-Virtual_Healthcare_Assistant"
+  },
+  {
+    "title": "Automatic Performance Evaluation System",
+    "category": "Machine Learning & Data Science",
+    "description": "Hackathon build from VillageHacks: an automated system for scoring and evaluating performance submissions, replacing a manual review step with a programmatic pipeline.",
+    "tags": [
+      "Python",
+      "Hackathon",
+      "Automation"
+    ],
+    "website": "https://github.com/siddhartha5782/VillageHacks_hackathon-Automatic_Performance_Evaluation_System"
+  },
+  {
+    "title": "DeepSeek in Colab",
+    "category": "Machine Learning & Data Science",
+    "description": "A reproducible Colab notebook for running and experimenting with DeepSeek models on free GPU tiers, covering environment setup, model loading and inference.",
+    "tags": [
+      "LLM",
+      "DeepSeek",
+      "Colab",
+      "Jupyter"
+    ],
+    "website": "https://github.com/siddhartha5782/deepseek_in_colab"
+  },
+  {
+    "title": "Missile Guidance using Proportional Navigation Law",
+    "category": "Signals, Controls & Simulation",
+    "description": "Implements proportional navigation guidance so a missile can track a target trajectory and continuously adjust heading, simulated and validated in MATLAB. The most-starred project on the profile.",
+    "tags": [
+      "MATLAB",
+      "Control Systems",
+      "Guidance",
+      "Simulation"
+    ],
+    "website": "https://github.com/siddhartha5782/Missile-guidance-using-proportional-navigation-law"
+  },
+  {
+    "title": "Seismic Signal Analysis using Synchrosqueezing Transform",
+    "category": "Signals, Controls & Simulation",
+    "description": "Detects frequency components in seismic waves using the wavelet transform, then applies synchrosqueezing reassignment to sharpen the time-frequency representation.",
+    "tags": [
+      "MATLAB",
+      "Wavelets",
+      "Signal Processing",
+      "DSP"
+    ],
+    "website": "https://github.com/siddhartha5782/sesemic_waves"
+  },
+  {
+    "title": "FM Modulation using Simulink",
+    "category": "Signals, Controls & Simulation",
+    "description": "Frequency modulation and demodulation modelled in Simulink, covering carrier generation, modulation and recovery of the baseband signal.",
+    "tags": [
+      "Simulink",
+      "MATLAB",
+      "Communications",
+      "DSP"
+    ],
+    "website": "https://github.com/siddhartha5782/FM_using_simulink"
+  },
+  {
+    "title": "Batch XML to JSON",
+    "category": "Web & Tooling",
+    "description": "Small Python utility that converts a whole directory of XML files to JSON in one pass — built to remove a repetitive preprocessing step from data pipelines.",
+    "tags": [
+      "Python",
+      "CLI",
+      "Data Processing"
+    ],
+    "website": "https://github.com/siddhartha5782/xml_to_json-batch-"
+  },
+  {
+    "title": "Retail App",
+    "category": "Web & Tooling",
+    "description": "Retail storefront prototype covering product browsing and cart flow, built as a front-end exercise in layout and state handling.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "website": "https://github.com/siddhartha5782/retail_app"
+  },
+  {
+    "title": "E-Commerce React Frontend",
+    "category": "Web & Tooling",
+    "description": "React front end for an e-commerce flow — product listing, detail views and cart state — built to practise component architecture and client-side routing.",
+    "tags": [
+      "React",
+      "JavaScript",
+      "Frontend"
+    ],
+    "website": "https://github.com/siddhartha5782/ecommerce-react-fe"
+  },
+  {
+    "title": "2D Platformer",
+    "category": "Games",
+    "description": "Unity 2D platformer built in C# — player movement and physics, collision handling, level layout and simple enemy behaviour.",
+    "tags": [
+      "Unity",
+      "C#",
+      "Game Dev"
+    ],
+    "website": "https://github.com/siddhartha5782/2d_platformer"
+  },
+  {
+    "title": "2D Game",
+    "category": "Games",
+    "description": "Unity 2D game project in C#, covering scene setup, sprite animation and the core gameplay loop.",
+    "tags": [
+      "Unity",
+      "C#",
+      "Game Dev"
+    ],
+    "website": "https://github.com/siddhartha5782/2d_game"
+  },
+  {
+    "title": "Bubble Shooter",
+    "category": "Games",
+    "description": "Classic bubble-shooter built in Unity with C# — aiming, colour-matching and chain-clearing mechanics.",
+    "tags": [
+      "Unity",
+      "C#",
+      "Game Dev"
+    ],
+    "website": "https://github.com/siddhartha5782/bubble_shooter"
+  }
+]
