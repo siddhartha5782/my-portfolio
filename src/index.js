@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap first so our theme can override it
 import './index.css';
 import App from './App';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Add this line to import Bootstrap
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
