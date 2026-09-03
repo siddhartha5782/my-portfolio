@@ -10,7 +10,7 @@
 
 .navbar-wrapper.scrolled {
   padding: 12px 0;
-  background: rgba(10, 10, 12, 0.7);
+  background: rgba(11, 14, 20, 0.78);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--glass-border);
 }
@@ -73,8 +73,8 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background: var(--accent-primary);
-  box-shadow: 0 0 10px var(--accent-primary);
+  background: var(--gradient-brand);
+  border-radius: 2px;
 }
 
 .mobile-toggle {

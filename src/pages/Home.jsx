@@ -10,7 +10,7 @@ const Home = () => {
   const [featured, setFeatured] = useState([]);
 
   useEffect(() => {
-    fetch('details.json')
+    fetch(`${process.env.PUBLIC_URL}/details.json`)
       .then((response) => response.json())
       .then((data) => {
         setHome(data.home);
@@ -50,12 +50,12 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="container">
+          <motion.span className="eyebrow" variants={itemVariants}>
+            Software Engineer · AI/ML · Backend
+          </motion.span>
           <motion.h1 className="hero-title" variants={itemVariants}>
-            {home.title.split(' ').map((word, i) => (
-              <span key={i} className={i === 2 || i === 3 ? 'text-gradient' : ''}>
-                {word}{' '}
-              </span>
-            ))}
+            {home.title}{' '}
+            {home.titleAccent && <span className="text-gradient">{home.titleAccent}</span>}
           </motion.h1>
           <motion.p className="hero-intro" variants={itemVariants}>
             {home.introduction}
@@ -101,6 +101,13 @@ const Home = () => {
                 <div className="project-content">
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
+                  {project.tags && (
+                    <div className="project-tags">
+                      {project.tags.map((tag, i) => (
+                        <span key={i} className="tag">{tag}</span>
+                      ))}
+                    </div>
+                  )}
                   {project.website && (
                     <a
                       href={project.website} 

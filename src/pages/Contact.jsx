@@ -7,7 +7,7 @@ const Contact = () => {
   const [contact, setContact] = useState(null);
 
   useEffect(() => {
-    fetch('details.json')
+    fetch(`${process.env.PUBLIC_URL}/details.json`)
       .then((response) => response.json())
       .then((data) => setContact(data.contact))
       .catch((error) => console.error('Error fetching details:', error));

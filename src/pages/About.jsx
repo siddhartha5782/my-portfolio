@@ -7,7 +7,7 @@ const About = () => {
   const [about, setAbout] = useState(null);
 
   useEffect(() => {
-    fetch('details.json')
+    fetch(`${process.env.PUBLIC_URL}/details.json`)
       .then((response) => response.json())
       .then((data) => setAbout(data.about))
       .catch((error) => console.error('Error fetching details:', error));
@@ -63,7 +63,7 @@ const About = () => {
               >
                 <div className="expertise-header">
                   <div className="expertise-icon-wrapper">
-                    <img src={about.expertise_img[index]} alt={about.expertise_title[index]} />
+                    <img src={`${process.env.PUBLIC_URL}/${about.expertise_img[index]}`} alt={about.expertise_title[index]} />
                   </div>
                   <h3>{about.expertise_title[index]}</h3>
                 </div>
@@ -86,9 +86,20 @@ const About = () => {
                   <motion.div key={index} className="timeline-item" variants={itemVariants}>
                     <div className="timeline-dot"></div>
                     <div className="timeline-content">
+                      <span className="timeline-period">{exp.period}</span>
                       <h3>{exp.role}</h3>
-                      <h4>{exp.company}</h4>
-                      <p>{exp.description}</p>
+                      <h4>
+                        {exp.company}
+                        {exp.location && <span className="timeline-location"> · {exp.location}</span>}
+                      </h4>
+                      {exp.description && <p>{exp.description}</p>}
+                      {exp.highlights && (
+                        <ul className="timeline-highlights">
+                          {exp.highlights.map((point, i) => (
+                            <li key={i}>{point}</li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                   </motion.div>
                 ))}
@@ -105,8 +116,10 @@ const About = () => {
                   <motion.div key={index} className="timeline-item" variants={itemVariants}>
                     <div className="timeline-dot"></div>
                     <div className="timeline-content">
+                      <span className="timeline-period">{edu.period}</span>
                       <h3>{edu.degree}</h3>
                       <h4>{edu.institution}</h4>
+                      {edu.detail && <p className="timeline-detail">{edu.detail}</p>}
                     </div>
                   </motion.div>
                 ))}

@@ -16,7 +16,7 @@ const contactTransition = {
 const CaseStudies = () => {
   const [casestudies, setCasestudies] = useState([]);
       useEffect(() => {
-        fetch('casestudies.json')
+        fetch(`${process.env.PUBLIC_URL}/casestudies.json`)
           .then((response) => response.json())
           .then((data) => setCasestudies(data))
           .catch((error) => console.error('Error fetching projects:', error));

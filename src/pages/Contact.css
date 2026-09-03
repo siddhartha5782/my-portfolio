@@ -56,7 +56,7 @@
 
 .method-icon.linkedin { background: rgba(0, 119, 181, 0.1); color: #0077b5; }
 .method-icon.github { background: rgba(255, 255, 255, 0.1); color: #fff; }
-.method-icon.email { background: rgba(0, 242, 255, 0.1); color: var(--accent-primary); }
+.method-icon.email { background: rgba(129, 140, 248, 0.12); color: var(--accent-primary); }
 
 .method-info h3 {
   font-size: 1.1rem;
